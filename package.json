@@ -1,0 +1,23 @@
+{
+  "name": "b",
+  "private": true,
+  "scripts": {
+    "dev": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@gridsome/vue-remark": "^0.2.6",
+    "axios": "^0.21.1",
+    "gridsome": "^0.7.0",
+    "import": "^0.0.6",
+    "marked": "^2.0.1",
+    "plausible-tracker": "^0.3.1",
+    "spectre.css": "^0.5.9"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.17.0"
+  }
+}

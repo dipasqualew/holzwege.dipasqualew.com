@@ -1,0 +1,27 @@
+html {
+  overflow-y: scroll;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.app {
+  padding: 0px 1rem;
+  width: 100%;
+  max-width: 750px;
+  margin: 1rem auto;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
