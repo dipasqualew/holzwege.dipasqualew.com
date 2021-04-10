@@ -2,9 +2,10 @@
   "name": "b",
   "private": true,
   "scripts": {
+    "build": "gridsome build",
     "dev": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "test:lint": "eslint ."
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
@@ -18,6 +19,9 @@
     "spectre.css": "^0.5.9"
   },
   "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-dipasqualew": "^1.1.1",
+    "eslint-plugin-vue": "^7.8.0",
     "netlify-cli": "^3.17.0"
   }
 }

@@ -14,13 +14,13 @@ module.exports = {
       {
         name: 'Holzwege',
         path: '/hz/:slug',
-      }
+      },
     ],
     Trail: [
       {
         name: 'Trail',
-        path: '/trail/:uuid'
-      }
-    ]
-  }
-}
+        path: '/trail/:uuid',
+      },
+    ],
+  },
+};

@@ -20,8 +20,8 @@ export default {
     holzwege: {
       type: Object,
       required: true,
-    }
-  }
+    },
+  },
 
 };
 </script>

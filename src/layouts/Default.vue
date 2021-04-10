@@ -1,11 +1,15 @@
 <template>
   <div class="app">
     <header>
-        <h1><g-link to="/">Holzwege</g-link></h1>
-        <small>reflections by <a href="https://dipasqualew.com">William Di Pasquale</a></small>
+      <h1>
+        <g-link to="/">
+          Holzwege
+        </g-link>
+      </h1>
+      <small>reflections by <a href="https://dipasqualew.com">William Di Pasquale</a></small>
     </header>
     <main>
-      <slot/>
+      <slot />
     </main>
   </div>
 </template>

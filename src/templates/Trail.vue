@@ -6,7 +6,12 @@
     </div>
     <div style="margin-top: 50px">
       <h4>Latest Holwege</h4>
-      <TrailStep v-for="step in $page.holzwege.edges" :key="step.node.uuid" type="origins" :step="step.node" />
+      <TrailStep
+        v-for="step in $page.holzwege.edges"
+        :key="step.node.uuid"
+        type="origins"
+        :step="step.node"
+      />
     </div>
   </Layout>
 </template>
@@ -38,6 +43,6 @@ import TrailStep from '../components/TrailStep.vue';
 export default {
   components: {
     TrailStep,
-  }
-}
+  },
+};
 </script>

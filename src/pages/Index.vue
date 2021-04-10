@@ -20,12 +20,16 @@
         We are all guests on the Internet and in this piece in particular, so please go ahead.
       </Paragraph>
       <Paragraph>
-        You can open <g-link :to="`/hz/${$page.latestHolzwege.edges[0].node.slug}`">the latest Holzwege</g-link>,
+        You can open <g-link :to="`/hz/${$page.latestHolzwege.edges[0].node.slug}`">
+          the latest Holzwege
+        </g-link>,
         or explore one of the main topics:
       </Paragraph>
       <Paragraph>
         <div v-for="trail in $page.allTrail.edges" :key="trail.node.uuid">
-          <g-link :to="`/trail/${trail.node.uuid}`">{{ trail.node.title }}</g-link>
+          <g-link :to="`/trail/${trail.node.uuid}`">
+            {{ trail.node.title }}
+          </g-link>
         </div>
       </Paragraph>
     </Container>
@@ -43,14 +47,6 @@
     </Container>
   </Layout>
 </template>
-
-<script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
-}
-</script>
 
 <style>
 .home-links a {
@@ -104,13 +100,3 @@ query {
   }
 }
 </page-query>
-
-<script>
-import Holzweg from '../components/Holzweg.vue';
-export default {
-
-  components: {
-    Holzweg,
-  }
-}
-</script>

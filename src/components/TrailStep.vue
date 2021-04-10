@@ -1,8 +1,8 @@
 <template>
-  <div :class="`trail-step-${this.type}`">
-      <g-link :to="url">
+  <div :class="`trail-step-${type}`">
+    <g-link :to="url">
       {{ label }}
-      </g-link>
+    </g-link>
   </div>
 </template>
 
@@ -16,10 +16,14 @@ export default {
     step: {
       type: Object,
       required: true,
-    }
+    },
   },
 
   computed: {
+    /**
+     * Returns the label associated
+     * to the step
+     */
     label() {
       if (this.step.caption) {
         return this.step.caption;
@@ -37,11 +41,14 @@ export default {
 
       return 'Untitled';
     },
+    /**
+     * Returns the related URL
+     */
     url() {
-      return `/hz/${this.step.slug}`
-    }
-  }
-}
+      return `/hz/${this.step.slug}`;
+    },
+  },
+};
 </script>
 
 <style scoped>

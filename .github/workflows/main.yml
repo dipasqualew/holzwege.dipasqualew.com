@@ -39,6 +39,30 @@ jobs:
           name: dist-${{ github.sha }}
           path: dist
 
+  test-unit:
+    name: Unit Tests and ESLint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Restore cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run Eslint
+        run: yarn test:lint
+
   publish-netlify:
     name: Deploy to Production
     if: github.ref == 'refs/heads/main'

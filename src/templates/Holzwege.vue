@@ -15,6 +15,9 @@ export default {
     Holzweg,
   },
 
+  /**
+   * Meta Info
+   */
   metaInfo() {
     const title = this.$page.holzwege.title || 'Untitled';
 
@@ -38,10 +41,10 @@ export default {
         {
           name: 'keywords',
           content: keywords.join(', '),
-        }
-      ]
-    }
-  }
+        },
+      ],
+    };
+  },
 };
 </script>
 

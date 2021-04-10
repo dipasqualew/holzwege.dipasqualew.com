@@ -1,0 +1,28 @@
+root: true
+extends:
+  - dipasqualew/mixins/base
+  - dipasqualew/mixins/imports
+  - dipasqualew/mixins/jsdoc
+
+overrides:
+  -
+    files:
+      - "*.vue"
+    extends:
+      - "plugin:vue/vue3-recommended"
+      - dipasqualew/mixins/base
+      - dipasqualew/mixins/imports
+      - dipasqualew/mixins/jsdoc
+      - dipasqualew/mixins/nuxt
+
+    rules:
+      vue/no-v-html: 'off'
+      vue/max-attributes-per-line:
+        - error
+        -
+          singleline: 3
+
+ignorePatterns:
+  - ".cache"
+  - "dist"
+  - "src/.temp"
