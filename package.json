@@ -19,7 +19,7 @@
     "spectre.css": "^0.5.9"
   },
   "devDependencies": {
-    "eslint": "^7.24.0",
+    "eslint": "^7.31.0",
     "eslint-config-dipasqualew": "^1.1.1",
     "eslint-plugin-vue": "^7.8.0",
     "netlify-cli": "^3.17.0"
