@@ -21,7 +21,7 @@
   "devDependencies": {
     "eslint": "^7.24.0",
     "eslint-config-dipasqualew": "^1.1.1",
-    "eslint-plugin-vue": "^7.8.0",
+    "eslint-plugin-vue": "^8.0.3",
     "netlify-cli": "^3.17.0"
   }
 }
