@@ -22,6 +22,6 @@
     "eslint": "^7.24.0",
     "eslint-config-dipasqualew": "^1.1.1",
     "eslint-plugin-vue": "^7.8.0",
-    "netlify-cli": "^3.17.0"
+    "netlify-cli": "^9.16.4"
   }
 }
