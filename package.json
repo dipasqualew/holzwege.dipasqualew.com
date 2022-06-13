@@ -15,7 +15,7 @@
     "gridsome": "^0.7.0",
     "import": "^0.0.6",
     "marked": "^2.0.1",
-    "plausible-tracker": "^0.3.1",
+    "plausible-tracker": "^0.3.8",
     "spectre.css": "^0.5.9"
   },
   "devDependencies": {
